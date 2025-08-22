@@ -1,0 +1,115 @@
+/* Checkout e Register */
+.checkout-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'voltar voltar'
+        'img form';
+    gap: 0 40px;
+    min-height: 80vh;
+    padding: 40px 4vw 0 4vw;
+    background: #fff;
+    align-items: flex-start;
+}
+.checkout-main .voltar-btn {
+    grid-area: voltar;
+    margin-bottom: 30px;
+}
+.checkout-produto {
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+    align-items: center;
+}
+.checkout-produto img {
+    width: 220px;
+    height: auto;
+    background: #f7f7f7;
+    border-radius: 30px;
+    box-shadow: 0 4px 24px #0001;
+    margin-bottom: 20px;
+}
+.checkout-produto h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    line-height: 1.1;
+}
+.checkout-valores {
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 500px;
+}
+.checkout-form {
+    grid-area: form;
+    background: #e0e0e0;
+    padding: 36px 44px 32px 44px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 16px #0001;
+    width: 100%;
+    max-width: 420px;
+}
+.checkout-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+.checkout-form input {
+    padding: 13px 16px;
+    border-radius: 16px;
+    border: none;
+    font-size: 1.1rem;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 4px #0001;
+}
+.comprar-btn {
+    background: #4cd964;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 15px 38px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px #4cd96433;
+    width: 100%;
+}
+.comprar-btn:hover {
+    background: #38b24c;
+    box-shadow: 0 4px 18px #38b24c33;
+}
+@media (max-width: 900px) {
+    .checkout-main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'voltar'
+            'img'
+            'form';
+        gap: 0;
+        padding: 20px 2vw 0 2vw;
+    }
+    .checkout-produto {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .checkout-form {
+        min-width: 90vw;
+        padding: 20px 5vw;
+        max-width: 100vw;
+    }
+    .checkout-valores {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

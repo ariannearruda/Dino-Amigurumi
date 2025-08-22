@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #DBF4F2;
+    color: #000;
+}
+
+
+.topo {
+    background-color: #D9D9D9;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.pesquisa input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.icones span {
+    margin-left: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.banner {
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+}
+
+.agradecimento-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 32px 4vw 0 4vw;
+  background: #fff;
+}
+.agradecimento-titulo {
+  font-size: 3vw;
+  font-weight: 400;
+  text-align: center;
+  margin: 40px 0 40px 0;
+  line-height: 1.1;
+}
+.btn-rastreio {
+  background: #4cd964;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 15px 38px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px #4cd96433;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-rastreio:hover {
+  background: #38b24c;
+  box-shadow: 0 4px 18px #38b24c33;
+}
+.voltar-btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  color: #222;
+  text-decoration: none;
+  display: inline-block;
+}
+.voltar-btn img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+@media (max-width: 900px) {
+  .agradecimento-titulo {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 600px) {
+  .agradecimento-main {
+    padding: 16px 2vw 0 2vw;
+  }
+  .agradecimento-titulo {
+    font-size: 7vw;
+  }
+  .btn-rastreio {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+}

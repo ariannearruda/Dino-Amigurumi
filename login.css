@@ -1,0 +1,89 @@
+body {
+	font-family: sans-serif;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.login-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+	padding: 32px 4vw 0 4vw;
+}
+
+.login-form {
+	background: #e0e0e0;
+	padding: 36px 44px 32px 44px;
+	border-radius: 18px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 340px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 16px #0001;
+	width: 100%;
+	max-width: 420px;
+}
+.login-form h2 {
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 24px;
+	text-align: center;
+}
+.login-form form {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	width: 100%;
+}
+.login-form input {
+	padding: 13px 16px;
+	border-radius: 16px;
+	border: none;
+	font-size: 1.1rem;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 1px 4px #0001;
+}
+.login-form .login-links {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.login-form .login-links a {
+	color: #1976d2;
+	text-decoration: none;
+}
+.login-form .login-links a:hover {
+	text-decoration: underline;
+}
+.login-form .comprar-btn {
+	background: #4cd964;
+	color: #fff;
+	border: none;
+	border-radius: 22px;
+	padding: 15px 38px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: background 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 12px #4cd96433;
+	width: 100%;
+}
+.login-form .comprar-btn:hover {
+	background: #38b24c;
+	box-shadow: 0 4px 18px #38b24c33;
+}
+@media (max-width: 600px) {
+	.login-form {
+		min-width: 90vw;
+		padding: 20px 5vw;
+		max-width: 100vw;
+	}
+}
